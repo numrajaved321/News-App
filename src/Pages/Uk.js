@@ -17,7 +17,7 @@ export default function Pcs() {
     const qInTitle = "mui"; // search for "mui" in the article title
     const from = "";
     const apiKey = "e64beaaee7084e38bbddb0daffaa0b13";
-    const url = ` https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=e64beaaee7084e38bbddb0daffaa0b13`;
+    const url = ` https://newsapi.org/v2/top-headlines?country=gb&category=business&apiKey=e64beaaee7084e38bbddb0daffaa0b13`;
     const request = new Request(url);
     fetch(request)
       .then(response => response.json())

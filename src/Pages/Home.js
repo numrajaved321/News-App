@@ -5,7 +5,7 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { CardActionArea } from '@mui/material';
+import { CardActionArea, Container } from '@mui/material';
 import Grid from '@mui/material/Grid';
 
 export default function News() {
@@ -16,7 +16,6 @@ export default function News() {
 
   useEffect(() => {
     const fetchNews = () => {
-    //   const proxyUrl = "https://cors-anywhere.herokuapp.com/";
       const apiKey = "e64beaaee7084e38bbddb0daffaa0b13";
       let url = `https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&apiKey=${apiKey}`;
       if (search !== "") {
@@ -48,7 +47,7 @@ export default function News() {
   };
 
   return (
-    <div>
+    <Container>
       <div style={{ display: 'flex', justifyContent: 'center', paddingTop: '200px' }}>
         <TextField
           label="Search News"
@@ -85,6 +84,6 @@ export default function News() {
           </Grid>
         ))}
       </Grid>
-    </div>
+    </Container>
   );
 }

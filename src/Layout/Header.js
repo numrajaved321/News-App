@@ -126,15 +126,7 @@ function DrawerAppBar(props) {
               <Button sx={{ color: '#fff' }}>
                 Categories
               </Button>
-          <Search>
-            <SearchIconWrapper>
-              {/* <SearchIcon /> */}
-            </SearchIconWrapper>
-            <StyledInputBase
-              placeholder="Search…"
-              inputProps={{ 'aria-label': 'search' }}
-            />
-          </Search>
+        
           </Grid>
           <Grid md={6} lg={6} sx={{textAlign:"end"}}>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
